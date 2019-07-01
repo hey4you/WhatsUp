@@ -17,7 +17,7 @@ auth.onAuthStateChanged(user => {
       user.admin = idTokenResult.claims.admin;
       setupUI(user);
     });
-    db.collection('guides').onSnapshot(snapshot => {
+    db.collection('projekte').onSnapshot(snapshot => {
       setupGuides(snapshot.docs);
     }, err => console.log(err.message));
   } else {
@@ -30,7 +30,7 @@ auth.onAuthStateChanged(user => {
 const createForm = document.querySelector('#create-form');
 createForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  db.collection('guides').add({
+  db.collection('projekte').add({
     title: createForm.title.value,
     content: createForm.content.value
   }).then(() => {

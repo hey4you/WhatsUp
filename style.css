@@ -1,0 +1,30 @@
+.html{
+    background-color: black;
+}
+
+body{
+    background-color: #232323 !important;
+}
+
+.dark-nav {
+    background-color: #070707 !important;
+}
+
+h5{
+    color: white;
+}
+
+.nav-wrapper container{
+    color: white;
+}
+
+.logoImg{
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges; 
+    width: 300px; 
+    height: 200px;
+    margin-top: 5px; 
+    position: -webkit-sticky;
+    position: sticky;
+}
